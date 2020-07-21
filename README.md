@@ -1,6 +1,6 @@
 # Cheat Sheet
 
-## Add Static Files
+## Add Static Files 📚
 
   Inside pubspec.yaml file, add file path to the following marker :
   
