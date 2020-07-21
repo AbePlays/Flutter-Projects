@@ -12,6 +12,10 @@
   Adding an image to dart :
   
     AssetImage ham = AssetImage('images/hamilton.jpeg');
+    
+  Load image from internet :
+  
+    AssetImage img = Image.network('url');
 
 ## Working with GridView 🀆
   
@@ -24,7 +28,7 @@
         crossAxisSpacing: 10.0,
         mainAxisSpacing: 10.0,
       ),
-      itemCount: this.something.length, // or simply 9
+      itemCount: this.something.length,
       itemBuilder: (context, i) => SizedBox(
         height: 100.0,
         width: 100.0,
