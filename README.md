@@ -95,3 +95,19 @@
     },
     
     Navigator.pushNamed(context, '/b');
+
+## Handling Api requests 📲
+
+  Download http package from dart.
+  
+    var url = 'https://www.googleapis.com/books/v1/volumes?q={http}';
+
+    // Await the http get response, then decode the json-formatted response.
+    var response = await http.get(url);
+    if (response.statusCode == 200) {
+      var jsonResponse = convert.jsonDecode(response.body);
+      var itemCount = jsonResponse['totalItems'];
+      print('Number of books about http: $itemCount.');
+    } else {
+      print('Request failed with status: ${response.statusCode}.');
+    }
