@@ -74,3 +74,24 @@
         return null;
       },
     ),
+    
+## Navigate across screens 🔁
+
+  Push a screen:
+  
+    Navigator.push(context, 
+      MaterialPageRoute(
+        builder: (context) => NextPage()
+        // Pass parameter inside NextPage as a Key:Value pair to send data to next screen
+      )      
+    );
+    
+  Using name routes
+  
+    routes: <String, WidgetBuilder> {
+      '/a': (BuildContext context) => MyPage(title: 'page A'),
+      '/b': (BuildContext context) => MyPage(title: 'page B'),
+      '/c': (BuildContext context) => MyPage(title: 'page C'),
+    },
+    
+    Navigator.pushNamed(context, '/b');
