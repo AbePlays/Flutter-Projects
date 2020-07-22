@@ -40,8 +40,22 @@
       ),
     ),
   
-## Creating a scheduled task
+## Creating a scheduled task ⏱
 
     Future.delayed(const Duration(seconds : 3), () {
       Do Stuff ;)
     });
+    
+## Working with Text Fields ⌨️
+
+    TextFormField(
+      decoration: const InputDecoration(
+        hintText: 'Enter your email', // Placeholder text
+      ),
+      validator: (value) {
+        if (value.isEmpty) {
+          return 'Please enter some text';
+        }
+        return null;
+      },
+    ),
