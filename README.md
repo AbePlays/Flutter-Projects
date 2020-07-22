@@ -16,6 +16,21 @@
   Load image from internet :
   
     AssetImage img = Image.network('url');
+    
+## Woking with ListView 📃
+
+  Building Lists using ListView.builder :
+  
+    ListView.builder(
+      itemCount: this.something.length,
+      itemBuilder: (BuildContext context, int index) {
+        return Container(
+          height: 50,
+          color: Colors.anything,
+          child: someone,
+        );
+      }
+    );
 
 ## Working with GridView 🀆
   
