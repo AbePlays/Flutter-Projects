@@ -86,7 +86,7 @@
       )      
     );
     
-  Using name routes
+  Using named routes
   
     routes: <String, WidgetBuilder> {
       '/a': (BuildContext context) => MyPage(title: 'page A'),
@@ -111,3 +111,5 @@
     } else {
       print('Request failed with status: ${response.statusCode}.');
     }
+    
+## Working with Sqflite 📄 
