@@ -112,4 +112,22 @@
       print('Request failed with status: ${response.statusCode}.');
     }
     
-## Working with Sqflite 📄 
+## Creating Alert Boxes 🚧
+
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text('Error'),
+          content: Text('There is an error'),
+          actions: <Widget>[
+            FlatButton(
+              child: Text('OK'),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            )
+          ],
+        );
+      }
+    );
